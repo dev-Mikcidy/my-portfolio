@@ -227,6 +227,7 @@ function App() {
 
             <div className="projects-grid">
 
+
               {/* SmartHomeGitOps */}
               <article className="project-card">
                 <div className="project-content">
@@ -234,19 +235,21 @@ function App() {
 
                   <h3>SmartHomeGitOps</h3>
 
-                  <p>
+                  <p className="project-description">
                     Android application built with Kotlin and Jetpack Compose that
-                    communicates with the GitHub REST API to monitor repository
-                    activity and identify potentially suspicious Pull Request
-                    comments.
+                    uses the GitHub REST API to monitor Pull Requests and comments
+                    for potentially suspicious content. The app displays security
+                    alerts with confidence levels and provides actions for handling
+                    flagged Pull Requests.
                   </p>
 
                   <div className="project-technologies">
                     <span>Kotlin</span>
-                    <span>Android</span>
                     <span>Jetpack Compose</span>
                     <span>MVVM</span>
                     <span>Retrofit</span>
+                    <span>Kotlin Coroutines</span>
+                    <span>GitHub REST API</span>
                   </div>
 
                   <div className="project-links">
@@ -258,9 +261,19 @@ function App() {
                     >
                       GitHub →
                     </a>
+
+                    <a
+                      href="https://github.com/dev-Mikcidy/smart-home-gitops#-app-screenshots"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project-link"
+                    >
+                      Screenshots →
+                    </a>
                   </div>
                 </div>
               </article>
+
 
               {/* Hair Salon */}
               <article className="project-card">
